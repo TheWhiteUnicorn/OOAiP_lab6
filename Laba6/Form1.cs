@@ -19,8 +19,10 @@ namespace Laba6
 
 		private void button1_Click(object sender, EventArgs e)
 		{
+			Hide();
 			Form2 f2 = new Form2();
 			f2.ShowDialog();
+			this.Close();		
 		}
 
 		private void label1_Click(object sender, EventArgs e)

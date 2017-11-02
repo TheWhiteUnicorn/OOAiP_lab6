@@ -174,5 +174,33 @@ namespace Laba6
 			}
 		}
 
+		private void simpl1_Click(object sender, EventArgs e)
+		{
+			try
+			{
+				updateFractions(UpdateFractionsParam.FIRST);
+			} catch (FormatException)
+			{
+				return;
+			}
+			f1.reduce();
+			num1.Text = System.Convert.ToString(f1.getNumerator());
+			denum1.Text = System.Convert.ToString(f1.getDenominator());
+		}
+
+		private void simpl2_Click(object sender, EventArgs e)
+		{
+			try
+			{
+				updateFractions(UpdateFractionsParam.SECOND);
+			}
+			catch (FormatException)
+			{
+				return;
+			}
+			f2.reduce();
+			num2.Text = System.Convert.ToString(f2.getNumerator());
+			denum2.Text = System.Convert.ToString(f2.getDenominator());
+		}
 	}
 }

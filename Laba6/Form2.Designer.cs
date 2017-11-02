@@ -49,7 +49,6 @@
 			this.logicRes = new System.Windows.Forms.Label();
 			this.comboBoxLogic = new System.Windows.Forms.ComboBox();
 			this.errNotification = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox3.SuspendLayout();
@@ -72,6 +71,7 @@
 			this.simpl1.TabIndex = 2;
 			this.simpl1.Text = "Упростить";
 			this.simpl1.UseVisualStyleBackColor = true;
+			this.simpl1.Click += new System.EventHandler(this.simpl1_Click);
 			// 
 			// denum1
 			// 
@@ -122,6 +122,7 @@
 			this.simpl2.TabIndex = 2;
 			this.simpl2.Text = "Упростить";
 			this.simpl2.UseVisualStyleBackColor = true;
+			this.simpl2.Click += new System.EventHandler(this.simpl2_Click);
 			// 
 			// num2
 			// 
@@ -267,22 +268,12 @@
 			this.errNotification.Text = "Ошибка ввода данных! Возможно, введен ноль в знаменателе.";
 			this.errNotification.Visible = false;
 			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(320, 12);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 24;
-			this.button1.Text = "ХУЙ";
-			this.button1.UseVisualStyleBackColor = true;
-			// 
 			// Form2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.ControlLightLight;
 			this.ClientSize = new System.Drawing.Size(624, 372);
-			this.Controls.Add(this.button1);
 			this.Controls.Add(this.errNotification);
 			this.Controls.Add(this.groupBox5);
 			this.Controls.Add(this.groupBox4);
@@ -329,6 +320,5 @@
 		private System.Windows.Forms.Label logicRes;
 		private System.Windows.Forms.ComboBox comboBoxLogic;
 		private System.Windows.Forms.Label errNotification;
-		private System.Windows.Forms.Button button1;
 	}
 }
